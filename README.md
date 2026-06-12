@@ -7,7 +7,7 @@ This Project Contains All The Information About My Journey In My Life.
 The file structure of the project is as follows:
 
 ```bash
-Placemento
+my-journey
 ├── client
 │   ├── public
 │   └── src
@@ -48,7 +48,7 @@ Make sure you have the following installed on your machine:
 
    I. For Organization Members:
 
-   - **Branch Creation:** As an organization member, when working on a new feature or task, you should create a new branch from the "develop" branch.
+   - **Branch Creation:** As an organization member, when working on a new feature or task, you should create a new branch from the "main" branch.
      The branch name should be in the format `feature-` where `<description>` represents a short description of the task or feature you are working
      on. For example, if you are adding a login feature, the branch name could be `feature-login`.
    - **Code Implementation:** Implement the necessary changes and new features on your created branch. Make sure to adhere to the organization's
@@ -57,14 +57,14 @@ Make sure you have the following installed on your machine:
    - **Code Review:** If required by the organization's development process, request a code review from your peers to ensure code quality and
      adherence to project guidelines.
    - **Pull Request Creation:** Once you are confident that your code is complete and tested, create a pull request to merge your changes from the
-     `feature-*` branch into the `develop` branch. Clearly explain the purpose and scope of the changes in the pull request description.
+     `feature-*` branch into the `main` branch. Clearly explain the purpose and scope of the changes in the pull request description.
 
    II. For External Contributors:
 
    - **Forking the Repository:** If you are an external contributor, you should fork the repository to your GitHub account. This will create a copy of
      the repository under your account, which you can use to make changes and submit pull requests.
 
-   - **Branch Creation:** After forking the repository, create a new branch from the `develop` branch. The branch name should be in the format
+   - **Branch Creation:** After forking the repository, create a new branch from the `main` branch. The branch name should be in the format
      `feature-` where `<description>` represents a short description of the task or feature you are working on. For example, if you are adding a login
      feature, the branch name could be `feature-login`.
 
@@ -77,18 +77,18 @@ Make sure you have the following installed on your machine:
      adherence to project guidelines.
 
    - **Pull Request Creation:** Once you are confident that your code is complete and tested, create a pull request to merge your changes from the
-     `feature-*` branch into the `develop` branch. Clearly explain the purpose and scope of the changes in the pull request description.
+     `feature-*` branch into the `main` branch. Clearly explain the purpose and scope of the changes in the pull request description.
 
 2. Clone the repository:
 
    ```bash
-   git clone https://github.com/Sagargupta16/My_Journey.git
+   git clone https://github.com/Sagargupta16/my-journey.git
    ```
 
 3. Navigate to the project directory:
 
    ```bash
-   cd my_journey
+   cd my-journey
    ```
 
 4. Install the project dependencies:
@@ -114,19 +114,19 @@ Make sure you have the following installed on your machine:
 
 ## Contributing
 
-If you would like to contribute to the project, please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
+If you would like to contribute to the project, please follow the steps in the [Installation](#installation) section above.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPL-3.0 License](LICENSE).
 
 ## Contact
 
-If you have any questions or need further assistance, please feel free to contact us.
+If you have any questions or need further assistance, please feel free to reach out via [GitHub](https://github.com/Sagargupta16).
 
 ## Project Status
 
-The project is currently under development. The initial version of the project is expected to be released soon.
+The project is currently under development. No public release is available yet.
 
 ## Project Team
 
@@ -142,7 +142,7 @@ The project team consists of the following members:
 - [Express](https://expressjs.com/ 'Express')
 - [MongoDB](https://www.mongodb.com/ 'MongoDB')
 - [AG Grid](https://www.ag-grid.com/ 'AG Grid')
-- [AG Charts](https://www.ag-grid.com/ag-charts-overview/ 'AG Charts')
+- [AG Charts](https://www.ag-grid.com/charts/ 'AG Charts')
 - [React-Router](https://reactrouter.com/ 'React-Router')
 - [Axios](https://axios-http.com/ 'Axios')
 - [JWT](https://jwt.io/ 'JWT')
