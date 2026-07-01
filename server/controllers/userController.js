@@ -3,7 +3,7 @@ const logger = require('../utils/logger');
 
 exports.viewAllUsers = async (req, res) => {
 	try {
-		const users = await User.find();
+		const users = await User.find().select('-password');
 		res.json(users);
 	} catch (error) {
 		logger.error(error);
@@ -14,7 +14,7 @@ exports.viewAllUsers = async (req, res) => {
 exports.viewSingleUser = async (req, res) => {
 	try {
 		const { id } = req.params,
-			user = await User.findById(id);
+			user = await User.findById(id).select('-password');
 		if (!user) return res.status(404).json({ errors: ['User not found'] });
 		res.json(user);
 	} catch (error) {
