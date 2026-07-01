@@ -26,7 +26,7 @@ exports.viewSingleUser = async (req, res) => {
 exports.updateUser = async (req, res) => {
 	try {
 		const { id } = req.params,
-			user = await User.findByIdAndUpdate(id, req.body, { new: true });
+			user = await User.findByIdAndUpdate(id, req.body, { new: true }).select('-password');
 		if (!user) return res.status(404).json({ errors: ['User not found'] });
 		res.json(user);
 	} catch (error) {
@@ -38,7 +38,7 @@ exports.updateUser = async (req, res) => {
 exports.deleteUser = async (req, res) => {
 	try {
 		const { id } = req.params,
-			user = await User.findByIdAndDelete(id);
+			user = await User.findByIdAndDelete(id).select('-password');
 		if (!user) return res.status(404).json({ errors: ['User not found'] });
 		res.json(user);
 	} catch (error) {
