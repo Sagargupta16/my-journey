@@ -16,7 +16,7 @@ my-journey
 │       ├── pages
 │       ├── utils
 │       ├── App.jsx
-│       ├── index.js
+│       ├── main.jsx
 │       └── ...
 ├── server
 │   ├── controllers
@@ -112,6 +112,25 @@ Make sure you have the following installed on your machine:
 
    The application should now be running in your browser.
 
+## Environment Variables
+
+The server reads its configuration from `server/.env`. Copy the example file and fill in your own values:
+
+```bash
+cp .env.example server/.env
+```
+
+| Variable               | Description                                        |
+| ---------------------- | -------------------------------------------------- |
+| `PORT`                 | Port the Express server listens on (default 5000)  |
+| `DB_CONNECTION_STRING` | MongoDB connection string                          |
+| `JWT_SECRET`           | Secret used to sign JWT tokens                     |
+| `JWT_SALT_ROUNDS`      | Bcrypt salt rounds for password hashing            |
+| `EMAIL_ID`             | Gmail address used to send OTP emails              |
+| `EMAIL_PASSWORD`       | App password for the email account                 |
+
+Never commit your `.env` file -- it is already listed in `.gitignore`.
+
 ## Contributing
 
 If you would like to contribute to the project, please follow the steps in the [Installation](#installation) section above.
@@ -137,7 +156,7 @@ The project team consists of the following members:
 ## References
 
 - [MERN Stack](https://www.mongodb.com/mern-stack 'MERN Stack')
-- [React](https://reactjs.org/ 'React')
+- [React](https://react.dev/ 'React')
 - [Node.js](https://nodejs.org/ 'Node.js')
 - [Express](https://expressjs.com/ 'Express')
 - [MongoDB](https://www.mongodb.com/ 'MongoDB')
