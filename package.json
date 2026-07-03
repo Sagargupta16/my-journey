@@ -6,7 +6,6 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"format": "prettier --write .",
 		"frontend-start": "cd client && npm start",
-		"frontent-build": "cd client && npm run build",
 		"frontend-install": "cd client && npm install",
 		"backend-start": "cd server && npm start",
 		"backend-install": "cd server && npm install",
@@ -15,7 +14,7 @@
 		"frontend-build": "cd client && npm run build"
 	},
 	"author": "Sagar Gupta",
-	"license": "ISC",
+	"license": "GPL-3.0-only",
 	"devDependencies": {
 		"prettier": "^3.1.1",
 		"prettier-plugin-organize-imports": "^4.0.0"
