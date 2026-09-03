@@ -20,6 +20,6 @@
 		"prettier-plugin-organize-imports": "^4.0.0"
 	},
 	"dependencies": {
-		"concurrently": "^9.0.0"
+		"concurrently": "^10.0.0"
 	}
 }
